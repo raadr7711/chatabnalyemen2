@@ -61,3 +61,6 @@ io.on('connection', (socket) => {
     	socket.broadcast.emit('typing', {username : socket.username})
     })
 })
+
+var socket = io.connect("https://abnalyemen3.herokuapp.com:"+ port)
+	
