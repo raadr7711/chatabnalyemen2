@@ -12,7 +12,7 @@ var server = express()
 
 
 
-console.log(`Listening on ${ server }`)
+
 
  
 //set the template engine ejs
@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
 
 //Listen on port 3000
 server = app.listen(port)
-console.log(`Listening on ${ app.listen (port) }`)
+
 
 
 
