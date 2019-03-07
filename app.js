@@ -33,8 +33,8 @@ server = app.listen(port)
 
 
 //socket.io instantiation
-var io = require("socket.io")(server)
 
+var io = socketIO(server);
 
 //listen on every connection
 io.on('connection', (socket) => {
