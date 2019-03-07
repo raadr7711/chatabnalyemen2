@@ -1,6 +1,8 @@
-const express = require('express')
-const app = express()
-const server = express()
+var express = require('express')
+var  app = express()
+var server = express()
+
+var port = process.env.PORT || 5000;
 
  console.log(`Listening on ${ port }`)
 
