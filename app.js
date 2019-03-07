@@ -1,5 +1,8 @@
 const express = require('express')
 const app = express()
+const server = express()
+  .use((req, res) => res.sendFile(INDEX) )
+  .listen(PORT, () => console.log(`Listening on ${ PORT }`));
 
 
 //set the template engine ejs
