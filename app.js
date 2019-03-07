@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const server = express()
 var PORT = process.env.PORT || 3000;
- console.log(`Listening on ${ PORT }`));
+ console.log(`Listening on ${ PORT }`)
 
 
 //set the template engine ejs
