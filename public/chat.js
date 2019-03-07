@@ -1,7 +1,6 @@
 
 $(function(){
    	//make connection
-	var socket = io.connect("https://abnalyemen3.herokuapp.com:"+ port)
 	
 console.log(`Listening  raad on ${ PORT }`)
 	//buttons and inputs
