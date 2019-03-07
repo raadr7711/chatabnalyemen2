@@ -1,15 +1,14 @@
 var express = require('express')
 var  app = express()
 var server = require('http').createServer(app);
- var port = process.env.PORT || 3000;
+ 
 
 
 
- console.log(`Listening on ${ port }`)
-
-
-
-
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
 
 
 
@@ -27,7 +26,7 @@ app.get('/', (req, res) => {
 })
 
 //Listen on port 3000
-server = app.listen(port)
+//server = app.listen(port)
 
 
 
