@@ -2,7 +2,7 @@
 $(function(){
    	//make connection
 	
-	var socket = io.connect('http://localhost:3000)
+	var socket = io.connect('http://localhost:3000')
 console.log(`Listening  raad on ${ PORT }`)
 	//buttons and inputs
 	var message = $("#message")
