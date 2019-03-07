@@ -34,8 +34,8 @@ server = app.listen(port)
 
 //socket.io instantiation
 
-var io = socketIO(server);
 
+var io = require('socket.io')(port);
 //listen on every connection
 io.on('connection', (socket) => {
 	console.log('New user connected')
