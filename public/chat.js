@@ -1,7 +1,7 @@
 
 $(function(){
    	//make connection
-	var socket = io.connect('https://apnalyem.herokuapp.com:3000')
+	var socket = io.connect('https://abnalyemen3.herokuapp.com:3000')
 
 	//buttons and inputs
 	var message = $("#message")
