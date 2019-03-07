@@ -1,7 +1,7 @@
 
 $(function(){
    	//make connection
-	var socket = io.connect(server)
+	var socket = io.connect()
 	
 console.log(`Listening  raad on ${ PORT }`)
 	//buttons and inputs
