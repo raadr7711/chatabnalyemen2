@@ -2,6 +2,7 @@
 $(function(){
    	//make connection
 	
+	var socket = io.connect()
 console.log(`Listening  raad on ${ PORT }`)
 	//buttons and inputs
 	var message = $("#message")
