@@ -3,7 +3,7 @@ var  app = express()
 var server = express()
 
  var port = process.env.PORT || 5000;
-var http = require('http').server(app);
+
 
 
  console.log(`Listening on ${ port }`)
