@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const server = express()
+var port = process.env.PORT || 3000;
   .use((req, res) => res.sendFile(INDEX) )
   .listen(PORT, () => console.log(`Listening on ${ PORT }`));
 
@@ -18,7 +19,7 @@ app.get('/', (req, res) => {
 })
 
 //Listen on port 3000
-server = app.listen(3000)
+server = app.listen(port)
 
 
 
