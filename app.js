@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
 })
 
 //Listen on port 3000
-server = app.listen(80)
+server = app.listen(PORT)
 
 
 
@@ -32,7 +32,7 @@ server = app.listen(80)
 //socket.io instantiation
 
 
-var io = require("socket.io")(server)
+var io = require("socket.io")(80)
 
 //listen on every connection
 io.on('connection', (socket) => {
