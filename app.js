@@ -61,5 +61,5 @@ io.on('connection', (socket) => {
     })
 })
 
-var socket = io.connect()
+
 	
