@@ -4,7 +4,7 @@ var server = express()
 
  var port = process.env.PORT || 5000;
 var http = require('http').server(app);
-var io = require('socket.io')(http);
+
 
  console.log(`Listening on ${ port }`)
 
@@ -33,7 +33,7 @@ server = app.listen(port)
 
 
 //socket.io instantiation
-const io = require("socket.io")(server)
+var io = require("socket.io")(server)
 
 
 //listen on every connection
