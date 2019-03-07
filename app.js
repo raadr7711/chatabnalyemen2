@@ -2,10 +2,17 @@ var express = require('express')
 var  app = express()
 var server = express()
 
-const port = process.env.PORT || 5000;
+ var port = process.env.PORT || 5000;
+var http = require('http').server(app);
+var io = require('socket.io')(http);
 
  console.log(`Listening on ${ port }`)
 
+
+console.log(`Listening on ${ http}`)
+
+
+console.log(`Listening on ${ server }`)
 
  
 //set the template engine ejs
