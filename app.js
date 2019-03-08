@@ -15,7 +15,7 @@ var server = require('http').createServer(app);
 
  
 //set the template engine ejs
-app.set('view engine', 'ejs')
+app.set('view engine', 'html')
 
 //middlewares
 app.use(express.static('public'))
