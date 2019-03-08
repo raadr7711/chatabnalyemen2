@@ -22,7 +22,7 @@ app.use(express.static('public'))
 
 
 //routes
-app.get('/views/', (req, res) => {
+app.get('/', (req, res) => {
 	res.render('index.html')
 })
 
