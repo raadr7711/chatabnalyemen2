@@ -1,6 +1,6 @@
 $(function(){
    	//make connection
-	var socket = io.connect('https://abnalyemen3.herokuapp.com:80')
+	var socket = io.connect('http://raadchat.herokuapp.com:80')
 	
 
 	//buttons and inputs
