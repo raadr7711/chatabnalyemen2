@@ -57,6 +57,12 @@ io.on('connection', (socket) => {
 
     //listen on typing
     socket.on('re', (data) => {
-    	io.sockets.emit('re', {token : socket.token})
+    	io.sockets.emit('re', {token : data.token})
     })
+	
+	
+	socket.on('msg', (data) => {
+    	io.sockets.emit('msg', {e: data.e})
+    })
+	
 })
