@@ -50,13 +50,13 @@ io.on('connection', (socket) => {
     })
 
     //listen on new_message
-    socket.on('new_message', (data) => {
+    socket.on('msg', (data) => {
         //broadcast the new message
-        io.sockets.emit('new_message', {message : data.message, username : socket.username});
+        io.sockets.emit('msg', {cmd : data.cmd, data: data.data});
     })
 
     //listen on typing
-    socket.on('typing', (data) => {
-    	socket.broadcast.emit('typing', {username : socket.username})
+    socket.on('re', (data) => {
+    	io.sockets.emit('re', {token : socket.token})
     })
 })
