@@ -1,5 +1,5 @@
 
-function(){
+
    	//make connection
 	
 	var socket = io.connect('abnalyemen3.herokuapp.com:80')
@@ -38,6 +38,5 @@ function(){
 	socket.on('typing', (data) => {
 		feedback.html("<p><i>" + data.username + " is typing a message..." + "</i></p>")
 	})
-};
 
 
