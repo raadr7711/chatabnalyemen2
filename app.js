@@ -1,12 +1,14 @@
 var express = require('express')
 var  app = express()
 var server = require('http').createServer(app);
- 
+ var port = process.env.PORT || 5000;
 
 
 
-server =app.listen({ port: process.env.PORT || 4000 }).then(({ url }) => { 
-console.log(`Server ready at ${url}`); });
+ console.log(`Listening on ${ port }`)
+
+
+
 
 
 
@@ -25,7 +27,7 @@ app.get('/', (req, res) => {
 })
 
 //Listen on port 3000
-//  app.listen(PORT)
+server = app.listen(port)
 
 
 
@@ -58,6 +60,3 @@ io.on('connection', (socket) => {
     	socket.broadcast.emit('typing', {username : socket.username})
     })
 })
-
-
-	
