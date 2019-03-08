@@ -18,7 +18,7 @@ var server = require('http').createServer(app);
 app.set('view engine', 'html')
 
 //middlewares
-app.use(express.static('public'))
+app.use(express.static('pu2'))
 
 
 //routes
