@@ -2,7 +2,7 @@ $(function(){
    	//make connection
 	var socket = io.connect('https://abnalyemen3.herokuapp.com:80')
 	
-console.log(`Listening  raad on ${ PORT }`)
+
 	//buttons and inputs
 	var message = $("#message")
 	var username = $("#username")
