@@ -5,10 +5,8 @@ var server = require('http').createServer(app);
 
 
 
-const PORT = process.env.PORT || 3000;
-app.listen(PORT, () => {
-    console.log(`Our app is running on port ${ PORT }`);
-});
+server =app.listen({ port: process.env.PORT || 4000 }).then(({ url }) => { 
+console.log(`Server ready at ${url}`); });
 
 
 
@@ -27,7 +25,7 @@ app.get('/', (req, res) => {
 })
 
 //Listen on port 3000
-// server = app.listen(PORT)
+//  app.listen(PORT)
 
 
 
@@ -35,7 +33,7 @@ app.get('/', (req, res) => {
 //socket.io instantiation
 
 
-var io = require("socket.io")
+var io = require("socket.io")(server)
 
 //listen on every connection
 io.on('connection', (socket) => {
