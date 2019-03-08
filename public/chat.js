@@ -2,7 +2,7 @@
 $(function(){
    	//make connection
 	
-	var socket = io.connect('abnalyemen3.herokuapp.com:3000')
+	var socket = io.connect('abnalyemen3.herokuapp.com:443')
 console.log(`Listening  raad on ${ PORT }`)
 	//buttons and inputs
 	var message = $("#message")
