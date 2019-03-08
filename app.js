@@ -15,7 +15,7 @@ var server = require('http').createServer(app);
 
  
 //set the template engine ejs
-app.set('view engine', 'html')
+app.set('view engine', 'php')
 
 //middlewares
 app.use(express.static('pu2'))
@@ -23,7 +23,7 @@ app.use(express.static('pu2'))
 
 //routes
 app.get('/', (req, res) => {
-	res.render('index.html')
+	res.render('index.php')
 })
 
 //Listen on port 3000
