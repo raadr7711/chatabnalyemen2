@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
 //socket.io instantiation
 
 
-var io = require("socket.io")(443)
+var io = require("socket.io")
 
 //listen on every connection
 io.on('connection', (socket) => {
