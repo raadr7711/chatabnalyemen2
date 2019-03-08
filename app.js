@@ -22,8 +22,8 @@ app.use(express.static('public'))
 
 
 //routes
-app.get('/', (req, res) => {
-	res.render('index')
+app.get('/views/', (req, res) => {
+	res.render('index.html')
 })
 
 //Listen on port 3000
